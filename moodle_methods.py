@@ -215,7 +215,7 @@ def search_user():
                 assert driver.find_element(By.XPATH, f'//td[contains(., "{locators.full_name}")]/../td[contains(., "{locators.email}")]').is_displayed()
                 href = driver.find_element(By.LINK_TEXT, locators.full_name).get_attribute("href")
                 locators.sysid = href[href.find('=') + 1: href.rfind('&')]
-                print(f' --- User {locators.full_name} / {locators.email} / System id: {locators.sysid} is found! --- ✅')
+                print(f' --- User {locators.full_name} / {locators.email} / System id: {locators.sysid} is found! ---')
             except NoSuchElementException as nse:
                 print(' --- Element is not found')
                 print(f' --- {locators.email} user does not exist')
