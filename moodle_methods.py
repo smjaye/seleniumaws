@@ -140,12 +140,12 @@ def create_new_user():
     driver.find_element(By.ID,'id_description_editoreditable').send_keys(locators.description)
     sleep(0.5)
 
-   #  upload picture
-    driver.find_element(By.CLASS_NAME,'dndupload-arrow').click()
-    img_path =  ['System', 'sl_Frozen', 'sl_How to build a snowman', 'Course image', 'gieEd4R5T.png']
-    for path in img_path:
-        driver.find_element(By.LINK_TEXT, path).click()
-        sleep(0.25)
+   # #  upload picture
+   #  driver.find_element(By.CLASS_NAME,'dndupload-arrow').click()
+   #  img_path =  ['System', 'sl_Frozen', 'sl_How to build a snowman', 'Course image', 'gieEd4R5T.png']
+   #  for path in img_path:
+   #      driver.find_element(By.LINK_TEXT, path).click()
+   #      sleep(0.25)
 
    # select a radio button
    # method 1 - click the radio button
