@@ -151,12 +151,12 @@ def create_new_user():
    # method 1 - click the radio button
    # driver.find_element(By.XPATH, '//input[@value="4"]').click()
    # method 2 - click the label attached to radio button
-    driver.find_element(By.XPATH, '//label[contains(., "Create an alias/shortcut to the file")]').click()
-    sleep(0.25)
-    driver.find_element(By.XPATH, '//button[contains(text(), "Select this file")]').click()
-    sleep(0.25)
-    driver.find_element(By.ID, 'id_imagealt').send_keys(locators.pic_desc)
-    sleep(0.25)
+    # driver.find_element(By.XPATH, '//label[contains(., "Create an alias/shortcut to the file")]').click()
+    # sleep(0.25)
+    # driver.find_element(By.XPATH, '//button[contains(text(), "Select this file")]').click()
+    # sleep(0.25)
+    # driver.find_element(By.ID, 'id_imagealt').send_keys(locators.pic_desc)
+    # sleep(0.25)
    #  # populate Additional names section
     driver.find_element(By.LINK_TEXT, 'Additional names').click()
     sleep(0.25)
